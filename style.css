@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#page{
+    width: 1300px;
+    height: 5690px;
+    background-color: rgb(165, 165, 146);
+    margin: 0 auto;
+    position: relative;
+    /* padding-bottom: 150px; */
+}
+
+/* logo */
+#logo{
+    width: 1300px;
+    height: 70px;
+    background-color: rgb(197, 118, 65);
+    position: fixed;
+    z-index: 1;
+}
+#logo img{
+    position: relative;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    background-color: rgba(157, 252, 181, 0.822);
+    border-radius: 20px;
+}
+
+/* header */
+#header{
+    width: 1300px;
+    height: 50px;
+    background-color: rgb(236, 222, 176);
+    position: fixed;
+    top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+#header ul, li{
+    margin: 0;
+    padding: 0;
+}
+#header ul li:last-child{
+    border-right: none;
+}
+#header li{
+    padding: 0 20px;
+    list-style: none;
+    font-size: 20px;
+    border-right: 2px solid rgb(48, 47, 47);
+    float: left;
+}
+#header ul li a{
+    text-decoration: none;
+    color: rgb(48, 47, 47);
+}
+#header ul li a:hover{
+    color: rgb(228, 53, 53);
+}
+
+/* main */
+#main{
+    width: 1300px;
+    position: relative;
+    top: 130px;
+    z-index: 0;
+    /* display: flex;
+    flex-wrap: nowrap; */
+}
+
+/* main-left */
+.main-left{
+    flex-shrink:0;
+    width: 350px;
+    height: 388px;
+    background-color: rgb(161, 165, 128);
+    padding-top: 5px;
+    position: fixed;
+    float: left;
+    top: 135px;
+    overflow: auto;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 40;
+    text-overflow: ellipsis;
+}
+.main-left .menu{
+    margin: 5px 10px 5px 20px;
+}
+.main-left .menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.main-left .menu a:hover{
+    color: rgb(238, 53, 53);
+}
+.main-left .menu span{
+    color: rgb(77, 75, 75);
+}
+.main-left .menu .text{
+    margin-left: 10px;
+    line-height: 25px;
+}
+
+/* main right */
+
+#main-right{
+    width: 930px;
+    position: relative;
+    margin-left: auto;
+    right: 10px;
+    top: 5px
+}
+
+/* nhân vật */
+.figure{
+    position: relative;
+}
+.figure .link{
+    background-color: rgb(236, 222, 176);
+    width: 100%;
+    height: 410px;
+    position: relative;
+    text-align: justify;
+    /* margin-bottom: 5px; */
+}
+.figure .story{
+    position: absolute;
+    bottom: -10px;
+    margin: 0 20px 0 20px;
+}
+.figure .story h2{
+    color: rgb(190, 103, 62);
+}
+.figure .story p{
+    color: black;
+    padding: 5px;
+    background-color: rgba(145, 131, 131, 0.3);
+}
+.figure video, iframe{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* phần cuối */
+#footer{
+    width: 100%;
+    height: 220px;
+    background-color: rgb(197, 118, 65);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+#footer img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#footer .text{
+    margin-top: 80px;
+}
+#footer p{
+    margin: 10px;
+}
+#footer h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(77, 26, 196);
+}
+#footer .text a{
+    text-decoration: none;
+    font-size: large;
+    color: rgb(68, 67, 67);
+}
+#footer .text a:hover{
+    color: rgb(221, 77, 77);
+}
+.footer-button button{
+    border: none;
+    color: white;
+    font-size: large;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.footer-button button:last-of-type{
+    background-color: red;
+    transition: background-color 0.3s linear;
+}
+.footer-button button:last-of-type:hover{
+    background-color: white;
+    color: red;
+}
+.footer-button button:first-of-type{
+    background-color: green;
+    transition: background-color 0.3s linear;
+}
+.footer-button button:first-of-type:hover{
+    background-color: rgb(255, 255, 255);
+    color: red;
+}
